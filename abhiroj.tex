@@ -1,0 +1,260 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{scrextend}
+\usepackage{graphicx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand\sbullet[1][0.75]{\mathbin{\vcenter{\hbox{\scalebox{#1}{$\bullet$}}}}}
+
+\newcommand{\resumeProjectItem}[1]{
+  \item[$\sbullet$]\small{
+    {#1 \vspace{1pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}l}
+      \textbf{#1} & #2 \\
+      \textit{\normalsize#3} & \textit{\normalsize #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeadingListStart}{\begin{itemize}}
+\newcommand{\resumeProjectHeadingListEnd}{\end{itemize}}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[1]{
+    \item[\textbf{-}]\textbf{#1} \\
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+	\textbf{\Huge \scshape Abhiroj Panwar} \\ \vspace{1pt}
+	\small 09990681948 $|$ \href{mailto:abhiroj95@gmail.com}{\underline{abhiroj95@gmail.com}} $|$
+	\href{https://www.linkedin.com/in/abhirojpanwar/}{\underline{linkedin.com/in/abhirojpanwar}} $|$
+	\href{https://github.com/panwarab}{\underline{github.com/panwarab}}
+\end{center}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Computer Scientist - I}{August 2022 -- Present}
+{Adobe Inc.}{Noida, UP}
+\resumeProjectHeadingListStart
+\resumeProjectHeading{Dynamic Reporting}
+\resumeItemListStart
+\resumeProjectItem{Reduced wait time from 1 hour to near real-time of business reports by introducing \emph{Dynamic Reporting} for email marketing and click-tracking data of end users}
+\resumeProjectItem{Regularly mentored junior team members}
+\resumeProjectItem{Tech Stack: C++, Kafka Pipeline, Apache Druid}
+\resumeItemListEnd
+\resumeProjectHeadingListEnd
+\resumeProjectHeadingListStart
+\resumeProjectHeading{Project Dynamo $|$ Hackathon Week $|$ Innovation $|$ Best Hack Award}
+\resumeItemListStart
+\resumeProjectItem{Automated personalization in delivery authoring using Gen-AI, leveraging Prompt Engineering}
+\resumeProjectItem{This reduces considerable time to perform personalized delivery authoring, enabling marketers to perform advance personalization without it's complexities}
+\resumeItemListEnd
+\resumeProjectHeadingListEnd
+
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+\resumeSubheading
+{Software Development Engineer - II}{July 2020 -- July 2022}
+{Adobe Inc.}{Noida, UP}
+\resumeProjectHeadingListStart
+\resumeProjectHeading{Enhancing offers recommendation engine}
+\resumeItemListStart
+\resumeProjectItem{Added \emph{Horizontal Scaling Capability} to offers engine which previously ran in a monolithic setup}
+\resumeProjectItem{Optimize log aggregation and reporting by leveraging \emph{Snowflake DB}, enhancing the system's \emph{information retrieval} capabilities}
+\resumeProjectItem{With distributed setup, This help reduce latencies in recommendation api}
+\resumeItemListEnd
+\resumeProjectHeadingListEnd
+\resumeProjectHeadingListStart
+\resumeProjectHeading{Analytics Connector}
+\resumeItemListStart
+\resumeProjectItem{Enabled re-marketing to recipient's behavior by combining email tracking data with website click data}
+\resumeProjectItem{Implemented a connector ingesting rich analytics data processed over campaign's click-tracking data}
+\resumeItemListEnd
+\resumeProjectHeadingListEnd
+\resumeProjectHeadingListStart
+\resumeProjectHeading{Optimizing send times of marketing campaigns}
+\resumeItemListStart
+\resumeProjectItem{Optimize \emph{send time scheduling} of deliveries using historical click-tracking \& open-tracking data of end users}
+\resumeProjectItem{This has shown \emph{25\% improvement in click-through rate \& open rate} of the email deliveries}
+\resumeItemListEnd
+\resumeProjectHeadingListEnd
+\resumeProjectHeadingListStart
+\resumeProjectHeading{Real-time updates of MTA Logs $|$ Hackathon Week $|$ Most Impactful Hack}
+\resumeItemListStart
+\resumeProjectItem{Used \emph{message broker (kafka)} to update backend logs of Mail Transfer Agent to orchestration server in near-real-time}
+\resumeProjectItem{Without this, marketers need to wait for 1 hour for log aggregation jobs to trigger}
+\resumeItemListEnd
+\resumeProjectHeadingListEnd
+\resumeSubheading
+{Software Development Engineer - I}{Dec 2017 -- July 2020}
+{Adobe Inc.}{Noida, UP}
+\resumeProjectHeadingListStart
+\resumeProjectHeading{Analytics Connector Provisioning Service}
+\resumeItemListStart
+\resumeProjectItem{Streamlined the provisioning process and improved the robustness of Analytics Report suites}
+\resumeProjectItem{Created a web service to automate the enablement of Report Suites on the Adobe Cloud Platform}
+\resumeItemListEnd
+\resumeProjectHeadingListEnd
+\resumeProjectHeadingListStart
+\resumeProjectHeading{Realtime personalization and reporting using facial features $|$ POC Only}
+\resumeItemListStart
+\resumeProjectItem{Implemented facial recognition in a java utility to deliver personalized user experiences based on attributes like age, gender etc.}
+\resumeProjectItem{Proposed using environmental context, such as weather and temperature, for real-time, anonymous personalized targeting}
+\resumeItemListEnd
+\resumeProjectHeadingListEnd
+\resumeProjectHeadingListStart
+\resumeProjectHeading{Experience Data Onboarding Solution $|$ Hackathon}
+\resumeItemListStart
+\resumeProjectItem{Implemented a service for data ingestion and transformation on the Adobe Cloud Platform}
+\resumeProjectItem{Provided a self-service UX tool for users to perform dataset transformations}
+\resumeProjectItem{Tool allows users to create ETL workflows on Analytic's Datastore}
+\resumeItemListEnd
+\resumeProjectHeadingListEnd
+
+\resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+\resumeProjectHeading
+{\textbf{Wallser} $|$ \emph{Android, Java, Firebase, SQLite}}
+\resumeItemListStart
+\resumeItem{Wrote an android application to browse and download wallpapers using Open Source API}
+\resumeItem{Used SQLite for light-weight data persistence layer for marking user's favorite wallpapers}
+\resumeItem{Released and monetized the application on play store}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+	\small{\item{
+	      \textbf{Languages}{: Java, C++, SQL (Postgres), JavaScript} \\
+	      \textbf{Technologies}{: PostgreSQL, Kafka, Apache Tomcat, Apache Druid, React JS, Spring Boot, Android} \\
+	      \textbf{Developer Tools}{: Git, VS Code, Visual Studio, IntelliJ} \\
+	      }}
+\end{itemize}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{G. B. Pant Engineering College}{Uttarakhand}
+{Bachelor of Technology in Computer Science}{2013 -- 2017}
+\resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
